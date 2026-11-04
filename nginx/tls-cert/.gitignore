@@ -1,0 +1,10 @@
+# Ignore all TLS private keys, certificates, and CSRs in this directory
+*.pem
+*.key
+*.crt
+*.cer
+*.csr
+*.der
+*.p12
+*.pfx
+!.gitignore

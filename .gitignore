@@ -1,0 +1,56 @@
+# Environment & Local Secrets
+.env
+.env.*
+*.env*.local
+!.env.example
+*.token
+
+# Keys & Certificates
+*.key
+*.pem
+*.crt
+*.cer
+*.csr
+*.der
+*.p8
+*.pk8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.snk
+*.asc
+*.gpg
+id_rsa*
+id_ed25519*
+*id_ecdsa*
+*id_dsa*
+nginx/tls-cert/*.pem
+nginx/tls-cert/*.key
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+
+# Local Databases & Redis Snapshots
+*.db
+*.sqlite
+*.sqlite3
+*-journal
+dump.rdb
+
+# Logs, Services & Runtime
+*.log
+*.pid
+*.service
+.pytest_cache/
+.miniclassisland/
