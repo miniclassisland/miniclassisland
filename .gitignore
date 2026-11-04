@@ -64,6 +64,21 @@ desktop.ini
 *.sqlite3
 *-journal
 dump.rdb
+*.rdb
+*.sql
+*.dump
+
+# Archives, Backups & Package Manager Credentials
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+.npmrc
+.yarnrc
+.pypirc
+pip.conf
+docker-compose.override.yml
+compose.override.yml
 
 # Logs, Services & Runtime
 *.log
