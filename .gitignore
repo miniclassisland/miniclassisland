@@ -1,6 +1,10 @@
 # Environment & Local Secrets
+config.json
+config.*.json
 .env
 .env.*
+*.env
+*.env.local
 *.env*.local
 !.env.example
 *.token
@@ -21,12 +25,25 @@
 *.snk
 *.asc
 *.gpg
+miniclassisland_server.key*
 id_rsa*
 id_ed25519*
 *id_ecdsa*
 *id_dsa*
-nginx/tls-cert/*.pem
-nginx/tls-cert/*.key
+nginx/tls-cert/**
+!nginx/tls-cert/.gitignore
+
+# Frontend & Python Build/Dependencies
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.coverage
+.coverage.*
 
 # OS & Editor Artifacts
 .DS_Store
