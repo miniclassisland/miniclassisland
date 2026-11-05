@@ -86,3 +86,4 @@ compose.override.yml
 *.service
 .pytest_cache/
 .miniclassisland/
+.temp/
