@@ -49,7 +49,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
-.idea/
+# IDE project identity (shared name and icon)
+.idea/*
+!.idea/.name
+!.idea/icon.png
+!.idea/icon.svg
 .vscode/
 *.swp
 *.swo
