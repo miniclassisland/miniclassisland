@@ -1,16 +1,16 @@
 [submodule "admin"]
 	path = admin
-	url = https://github.com/MINIOpenSource/miniclassisland-admin.git
+	url = https://github.com/miniclassisland/admin.git
 [submodule "core"]
 	path = core
-	url = https://github.com/MINIOpenSource/miniclassisland-core.git
+	url = https://github.com/miniclassisland/core.git
 [submodule "web"]
 	path = web
-	url = https://github.com/MINIOpenSource/miniclassisland-web.git
+	url = https://github.com/miniclassisland/web.git
 [submodule "android"]
 	path = android
-	url = https://github.com/MINIOpenSource/miniclassisland-android.git
+	url = https://github.com/miniclassisland/android.git
 [submodule "hmos"]
 	path = hmos
-	url = https://github.com/MINIOpenSource/miniclassisland-hmos.git
+	url = https://github.com/miniclassisland/hmos.git
 
