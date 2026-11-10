@@ -27,11 +27,11 @@
 
 | 模块路径 | 仓库名称 | 角色定位 | 核心技术栈 | 文档入口 |
 | :--- | :--- | :--- | :--- | :--- |
-| [`core/`](core/) | `miniclassisland-core` | 集控核心后端（HTTP 三端口 + gRPC 服务端 + CLI） | Python 3.10+, FastAPI, gRPC (`grpcio`), SQLAlchemy 2.0 (Async), PostgreSQL, Redis, PGPy | [README](core/README.md) · [CONTRIBUTING](core/CONTRIBUTING.md) |
-| [`web/`](web/) | `miniclassisland-web` | 租户管理与教务集控工作台（`dash.miniclassisland.com`） | Next.js 16, React 19, TypeScript 5, Fluent UI React v9 | [README](web/README.md) · [CONTRIBUTING](web/CONTRIBUTING.md) |
-| [`admin/`](admin/) | `miniclassisland-admin` | 超级管理员全局治理控制台（`admin.miniclassisland.com`） | Next.js 16, React 19, TypeScript 5, Fluent UI React v9 | [README](admin/README.md) · [CONTRIBUTING](admin/CONTRIBUTING.md) |
-| [`android/`](android/) | `miniclassisland-android` | 原生 Android 移动/平板集控端（`org.miniopensource.miniclassisland`） | Java 17 / Android SDK 35, 自适应手机与平板双栏 UI | [README](android/README.md) · [CONTRIBUTING](android/CONTRIBUTING.md) |
-| [`hmos/`](hmos/) | `miniclassisland-hmos` | 原生 HarmonyOS Next 多设备集控端（`org.miniopensource.miniclassisland`） | ArkTS, HarmonyOS SDK API 12+ (`26.0.0`), `freeMultiWindow` 自由多窗 | [README](hmos/README.md) · [CONTRIBUTING](hmos/CONTRIBUTING.md) |
+| [`core/`](core/) | `miniclassisland/core` | 集控核心后端（HTTP 三端口 + gRPC 服务端 + CLI） | Python 3.10+, FastAPI, gRPC (`grpcio`), SQLAlchemy 2.0 (Async), PostgreSQL, Redis, PGPy | [README](core/README.md) · [CONTRIBUTING](core/CONTRIBUTING.md) |
+| [`web/`](web/) | `miniclassisland/web` | 租户管理与教务集控工作台（`dash.miniclassisland.com`） | Next.js 16, React 19, TypeScript 5, Fluent UI React v9 | [README](web/README.md) · [CONTRIBUTING](web/CONTRIBUTING.md) |
+| [`admin/`](admin/) | `miniclassisland/admin` | 超级管理员全局治理控制台（`admin.miniclassisland.com`） | Next.js 16, React 19, TypeScript 5, Fluent UI React v9 | [README](admin/README.md) · [CONTRIBUTING](admin/CONTRIBUTING.md) |
+| [`android/`](android/) | `miniclassisland/android` | 原生 Android 移动/平板集控端（`org.miniopensource.miniclassisland`） | Java 17 / Android SDK 35, 自适应手机与平板双栏 UI | [README](android/README.md) · [CONTRIBUTING](android/CONTRIBUTING.md) |
+| [`hmos/`](hmos/) | `miniclassisland/hmos` | 原生 HarmonyOS Next 多设备集控端（`org.miniopensource.miniclassisland`） | ArkTS, HarmonyOS SDK API 12+ (`26.0.0`), `freeMultiWindow` 自由多窗 | [README](hmos/README.md) · [CONTRIBUTING](hmos/CONTRIBUTING.md) |
 | [`nginx/`](nginx/) | *(聚合仓库内置)* | 统一反向代理、泛域名多租户路由与 HTTP/2 + gRPC 网关 | Nginx (TLS 1.2/1.3, HTTP/2, `grpc_pass`) | [`nginx/miniclassisland.conf`](nginx/miniclassisland.conf) |
 | [`assets/`](assets/) | *(聚合仓库内置)* | 跨端共享设计资产与开源字体（HarmonyOS Sans 等） | 静态资源 | - |
 
@@ -89,7 +89,7 @@ MINI ClassIsland 采用**四端口职责隔离 + 泛域名租户路由**架构�
 ### 4.1 克隆聚合仓库与子模块
 
 ```bash
-git clone --recurse-submodules https://github.com/MINIOpenSource/miniclassisland.git
+git clone --recurse-submodules https://github.com/miniclassisland/miniclassisland.git
 cd miniclassisland
 
 # 若已克隆但未拉取子模块：
