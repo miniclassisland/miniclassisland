@@ -7,10 +7,4 @@
 [submodule "web"]
 	path = web
 	url = https://github.com/miniclassisland/web.git
-[submodule "android"]
-	path = android
-	url = https://github.com/miniclassisland/android.git
-[submodule "hmos"]
-	path = hmos
-	url = https://github.com/miniclassisland/hmos.git
 
